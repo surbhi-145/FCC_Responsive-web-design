@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Project4</title>
+  
+  
+  
+      <link rel="stylesheet" href="./style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<nav id="navbar">
+  <header style="margin-top:10px;">C Documentation</header>
+  <ul>
+    <li><a href="#Introduction" class="nav-link">Introduction</a></li>
+    <li><a href="#POP" class="nav-link">POP</a></li>
+       <li><a href="#Components" class="nav-link">Components</a></li>
+    <li><a href="#Hello_World" class="nav-link">Hello World</a></li>
+    <li><a href="#Variables" class="nav-link">Variables</a></li>
+    <li><a href="#Variable_Scope" class="nav-link">Variable Scope</a></li>
+    <li><a href="#Constants" class="nav-link">Constants</a></li>
+    <li><a href="#Datatypes" class="nav-link">Datatypes</a></li>
+    <li><a href="#Conditional_Statements" class="nav-link">Conditional Statements</a></li>
+    <li><a href="#Loops" class="nav-link">Loops</a></li>
+    <li><a href="#Functions" class="nav-link">Functions</a></li> 
+    <li><a href="#References" class="nav-link">References</a></li>
+   </ul>
+  </nav>
+   
+<main id="main-doc">
+  <section id="Introduction" class="main-section">
+    <header>Introduction</header>
+    <article>
+    <p>C is a procedural programming language. It was initially developed by Dennis Ritchie between 1969 and 1973. It was mainly developed as a system programming language to write operating system. The main features of C language include low-level access to memory, simple set of keywords, and clean style, these features make C language suitable for system programming like operating system or compiler development.
+Many later languages have borrowed syntax/features directly or indirectly from C language. Like syntax of Java, PHP, JavaScript and many other languages is mainly based on C language. C++ is nearly a superset of C language (There are few programs that may compile in C, but not in C++).</p>
+    </article>
+  </section>
+  
+  <section id="POP" class="main-section">
+    <header>POP</header>
+    <article>
+      <p>A program in a procedural language is a list of instruction where each statement tells the computer to do something. It focuses on procedure (function) & algorithm is needed to perform the derived computation.
+
+When program become larger, it is divided into function & each function has clearly defined purpose. Dividing the program into functions & module is one of the cornerstones of structured programming.
+
+E.g.:- c, basic, FORTRAN.</p>
+      <h4>Characteristics of POP:</h4>
+      <ul>
+        <li>It focuses on process rather than data.</li>
+        <li>It takes a problem as a sequence of things to be done such as reading, calculating and printing. Hence, a number of functions are written to solve a problem.</li>
+        <li>A program is divided into a number of functions and each function has clearly defined purpose.</li>
+        <li>Most of the functions share global data.</li>
+        <li>Data moves openly around the system from function to function.</li>
+    </article>
+  </section>
+  <section id="Components" class="main-section">
+      <header>Components</header>
+    <article>
+      The various Components of a C program are:
+      <ol>
+        <li>
+          Header Files Inclusion
+        </li>
+        <p>The first and foremost component is the inclusion of the Header files in a C program.
+A header file is a file with extension .h which contains C function declarations and macro definitions to be shared between several source files.Some of C Header files:<ul><li>
+        stddef.h – Defines several useful types and macros.
+        </li>
+        <li>stdint.h – Defines exact width integer types.</li>
+        <li>stdio.h – Defines core input and output functions</li>
+        <li>stdlib.h – Defines numeric conversion functions, pseudo-random network generator, memory allocation</li>
+        <li>string.h – Defines string handling functions</li>
+        <li>math.h – Defines common mathematical functions</li></ul>
+        </p>
+      Syntax:
+      <code>#include <(header_file_name).h></code>
+        <li>
+          Main Method Declaration: 
+        </li>
+      <p>
+        The next part of a C program is to declare the main() function. The syntax to declare the main function is:
+      </p>
+      Syntax :
+      <code>int main() {}</code>
+      <li>
+        Variable Declaration:
+      </li>
+      <p>
+        The next part of any C program is the variable declaration. It refers to the variables that are to be used in the function. Please note that in C program, no variable can be used without being declared. Also in a C program, the variables are to be declared before any operation in the function.
+      </p>
+        Syntax:<code>int a;</code>
+      <li>Body:</li>
+      <p>Body of a function in C program, refers to the operations that are performed in the functions. It can be anything like manipulations, searching, sorting, printing, etc.</p>
+      <li>Return Statement: </li>
+      <p>The last part in any C program is the return statement. The return statement refers to the returning of the values from a function. This return statement and return value depend upon the return-type of the function. For example, if the return type is void, then there will be no return statement. In any other case, there will be a return statement and the return value will be of the type of the specified return-type.</p>
+    </article>
+  </section>
+    <section id="Hello_World" class="main-section">
+      <header>Hello World</header>
+      <article>
+      <p>
+        A simple C program to display "Hello, World!" on the screen. Since, it's a very simple program, it is often used to illustrate the syntax of a programming language. So lets get going!
+        </p>
+        <code> #include <stdio.h>
+                int main()
+          {
+   // printf() displays the string inside quotation
+   printf("Hello, World!");
+   return 0;
+}
+        </code>
+      </article>
+      </section>
+     <section id="Variables" class="main-section">
+       <header>Variables</header>
+         <article><p>
+           A variable is nothing but a name given to a storage area that our programs can manipulate. Each variable in C has a specific type, which determines the size and layout of the variable's memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.
+
+The name of a variable can be composed of letters, digits, and the underscore character. It must begin with either a letter or an underscore. Upper and lowercase letters are distinct because C is case-sensitive.
+           The following are the basic variable types:
+           <ul>
+             <li>char</li>Typically a single octet(one byte). This is an integer type.
+             <li>int</li>The most natural size of integer for the machine.
+              <li>float</li>A single-precision floating point value.
+              <li>double</li>A double-precision floating point value.
+              <li>void</li>Represents the absence of type.
+           </ul></p>
+           </article>
+      </section>
+         <section id="Variable_Scope" class="main-section">
+           <header>Variable Scope</header>
+             <article>
+               <p> A scope is a region of the program, and the scope of variables refers to the area of the program where the variables can be accessed after its declaration.In C every variable defined in scope. You can define scope as the section or region of a program where a variable has its existence; moreover, that variable cannot be used or accessed beyond that region.
+
+In C programming, variable declared within a function is different from a variable declared outside of a function. The variable can be declared in three places. These are:<ul>
+               <li> Inside a function or a block.(Local Variable)</li>
+               Example:<code>int main ()
+{
+    /* local variable definition and initialization */    int x,y,z;
+     
+    /* actual initialization */    x = 20;
+    y = 30;
+    z = x + y;
+     
+    printf ("value of x = %d, y = %d and z = %d\n", x, y, z);
+     
+    return 0;
+}
+</code>
+               <li>Out of all functions.(Global Variable)</li>
+               Example:<code>#include <stdio.h>
+
+/* global variable definition */int z;
+
+int main ()
+{
+    /* local variable definition and initialization */    int x,y;
+     
+    /* actual initialization */    x = 20;
+    y = 30;
+    z = x + y;
+     
+    printf ("value of x = %d, y = %d and z = %d\n", x, y, z);
+     
+    return 0;
+}</code>
+               <li>In the function parameters.(Formal parameters)</li>
+               </ul></p>
+             </article>
+         </section>
+             <section id="Constants" class="main-section">
+           <header>Constants</header>
+             <article>
+               <p>
+                Constants in C are the fixed values that are used in a program, and its value remains the same during the entire execution of the program.Constants are also called literals.
+Constants can be any of the data types.
+                 It is considered best practice to define constants using only upper-case names. Syntax:<code>const type constant_name;
+                 </code>
+                 Example:
+                 <code> #include<stdio.h>
+main()
+{
+  const int SIDE = 10;
+  int area;
+  area = SIDE*SIDE;
+  printf("The area of the square with side: %d is: %d sq. units"
+  , SIDE, area);
+}
+
+                 </code>
+               </p>
+               </article>
+         </section>
+             <section id="Datatypes" class="main-section">
+           <header>Datatypes</header>
+             <article>
+               <p>
+               Data types specify how we enter data into our programs and what type of data we enter. C language has some predefined set of data types to handle various kinds of data that we can use in our program. These datatypes have different storage capacities.
+
+C language supports 2 different type of data types:
+                 <ul>
+                   <li>Primary data types:</li>These are fundamental data types in C namely integer(int), floating point(float), character(char) and void.
+                   <li> Derived data types:</li>Derived data types are nothing but primary datatypes but a little twisted or grouped together like array, stucture, union and pointer. 
+               </ul>
+               </p>
+              </article>
+         </section>
+             <section id="Conditional_Statements" class="main-section">
+           <header>Conditional Statements</header>
+             <article>
+               if and else are two of the most frequently used conditionals in C/C++, and they enable you to execute zero or one conditional statement among many such dependent conditional statements. We use them in the following ways:
+               <ul>
+                 <li>
+                   if: This executes the body of bracketed code starting with Statement 1 if condition evaluates to true.
+                 </li>
+                 <code>if (condition) {
+    statement1;
+    ...
+}
+                 </code>
+                 <li>
+                   if - else: This executes the body of bracketed code starting with  if  evaluates to true, or it executes the body of code starting with  if  evaluates to false. Note that only one of the bracketed code sections will ever be executed.
+                 </li>
+                 <code>if (condition) {
+    statement1;
+    ...
+}
+else {
+    statement2;
+    ...
+}</code>
+                 <li>if - else if - else: In this structure, dependent statements are chained together and the  for each statement is only checked if all prior conditions in the chain are evaluated to false. Once a  evaluates to true, the bracketed code associated with that statement is executed and the program then skips to the end of the chain of statements and continues executing. If each  in the chain evaluates to false, then the body of bracketed code in the else block at the end is executed.</li>
+                 <code>if(first condition) {
+    ...
+}
+else if(second condition) {
+    ...
+}
+.
+.
+.
+else if((n-1)'th condition) {
+    ....
+}
+else {
+    ...
+}</code>
+                 
+               </ul>
+             </article>
+         </section>
+             
+            <section id="Loops" class="main-section">
+           <header>Loops</header>
+             <article>
+               <p>You may encounter situations, when a block of code needs to be executed several number of times. In general, statements are executed sequentially: The first statement in a function is executed first, followed by the second, and so on.
+
+Programming languages provide various control structures that allow for more complicated execution paths.
+
+A loop statement allows us to execute a statement or group of statements multiple times. 
+               C programming language provides the following types of loops to handle looping requirements.</p>
+               <ul>
+                 <li>while loop</li>Repeats a statement or group of statements while a given condition is true. It tests the condition before executing the loop body.
+                 <li>for loop</li>Executes a sequence of statements multiple times and abbreviates the code that manages the loop variable.
+                 <li>do while loop</li>It is more like a while statement, except that it tests the condition at the end of the loop body.
+                 <li>nested loops</li>You can use one or more loops inside any other while, for, or do..while loop.
+               </ul>
+             </article>
+         </section>
+             <section id="Functions" class="main-section">
+           <header>Functions</header>
+             <article>
+               <p>
+                 A function is a group of statements that together perform a task. Every C program has at least one function, which is main(), and all the most trivial programs can define additional functions.
+
+You can divide up your code into separate functions. How you divide up your code among different functions is up to you, but logically the division is such that each function performs a specific task.
+
+A function declaration tells the compiler about a function's name, return type, and parameters. A function definition provides the actual body of the function.
+
+The C standard library provides numerous built-in functions that your program can call. For example, strcat() to concatenate two strings, memcpy() to copy one memory location to another location, and many more functions.
+
+A function can also be referred as a method or a sub-routine or a procedure, etc.
+               </p>
+             </article>
+         </section>
+             <section id="References" class="main-section">
+           <header>References</header>
+             <article>
+               tutorialspoint
+             </article>
+         </section>
+</main>
+  
+  
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<link href="https://fonts.googleapis.com/css?family=Belleza&display=swap" rel="stylesheet">
+*{
+  font-family: 'Belleza', sans-serif;
+  background:black;
+}
+
+#navbar{
+  font-size:20px;
+  background:black;
+  margin-top:-20px;
+  padding-bottom:10px;
+  position:fixed;
+  display:flex;
+  justify-content: flex-end;
+  padding-left:1010px;
+  padding-right:18px;
+}
+ul{
+  display:flex;
+  justify-content:flex-end;
+  margin-right:20px;
+  list-style:none;
+  padding-top:20px;
+}
+
+li a{
+  text-decoration:none;
+  display:block;
+  width:100px;
+  color:white;
+}
+
+li a:hover{
+  color:grey;
+}
+
+#welcome-section{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background:url(https://b.kisscc0.com/20180517/tq/kisscc0-green-desktop-wallpaper-leaf-darkness-light-design-5afd719dd0b736.3539226615265591338549.jpg);
+  color:white;
+   background-size: cover;
+}
+
+h1{
+  margin-bottom:-15px;
+  font-size:50px;
+  font-weight:100;
+}
+
+h1:hover{
+  color:grey;
+}
+
+#projects{
+  background:black;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+h2{
+  color:white;
+  font-weight:100;
+  background:black;
+  margin-top:-1px;
+  margin-bottom:-1px;
+  text-align:center;
+  padding-top:10px;
+  padding-bottom:10px;
+}
+
+img{
+  height:300px;
+  width:300px;
+}
+
+img:hover{
+  transform:scale(1.2);
+}
+
+@media (max-width: 200px){
+  img{
+  height:100px;
+  width:100px;
+}
+}
+
+#contact{
+  background:black;
+  color:white;
+}

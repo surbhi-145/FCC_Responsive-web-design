@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Project2</title>
+  
+  
+  
+      <link rel="stylesheet" href="./style.css">
+
+  
+</head>
+
+<body>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<main id="main">
+<h1 id="title">Demographic Survey</h1>
+<div id="outer">
+  <p id="description">Please fill out the Survey form for a great survey!</p>
+  <form id="survey-form" action="">
+    <div id="named">
+    <label for ="name" id="name-label">1. Name: </label>
+      <input type="text" required id="name" placeholder="Enter your name">
+      </div>
+  <div id="email-id">
+  <label for="email" id="email-label">2. Email-id:</label>
+    <input type="email" id="email" required placeholder="Enter your email-id">
+  </div>
+    <div id="age">
+      <label for="age" id="number-label">3. Age:</label>
+      <input type="number" id="number" min="1" max="125" placeholder="Age">
+    </div>
+    <div id="gender">
+      <label for="gender" id="gender-label">4. Gender:</label>
+      <select id="dropdown">
+        <option disabled selected value>Select an option</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+        <select>
+          </div>
+    <div id="education">
+      <label for="education" id="radio-label">5. Education:</label>
+      <div>
+        <input type="radio" value="1" name="radio-buttons" style="margin-top:10px;">Less than HS diploma
+      </div>
+        <div>
+       <input type="radio" value="2" name="radio-buttons">High School
+        </div>
+      <div>
+         <input type="radio" value="3" name="radio-buttons">Junior College
+        </div>
+      <div>
+         <input type="radio" value="4" name="radio-buttons">Graduate Degree
+        </div>
+   </div>
+     <div id="income">
+       <label for="income" id="checkbox-id">6. Income:</label>
+       <div>
+         <input type="checkbox" value="1" style="margin-top:10px;">0-25,000 INR
+         </div> 
+        <div>
+         <input type="checkbox" value="2">25,000-50,000 INR
+         </div> 
+        <div>
+         <input type="checkbox" value="3">50,000-2,00,000 INR
+         </div> 
+        <div>
+         <input type="checkbox" value="4">>2,00,000 INR
+         </div> 
+     </div>
+        <div id="comments">
+          <label for="comments" id="textarea-label" >7. Additional Comments:</label>
+          <div>
+            <textarea id="comments" style="height:50px;resize:vertical;" palceholder="Enter Your Comments here!"></textarea>
+          </div>
+        </div> 
+      <button id="submit" type="submit" style="margin-bottom:20px;">Submit</button>
+  </form>
+    <p style="text-align:center;"> Thank you for your time!</p>
+</div>
+  
+  
+
+</body>
+
+</html>

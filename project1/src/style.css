@@ -1,0 +1,46 @@
+h1{
+  font-size: 30px;
+  color: dimgray;
+  text-align:center;
+}
+
+p{
+  text-align:center;
+  color: LightSeaGreen;
+  
+}
+
+img{
+  display:block;
+  max-width:100%;
+  position:relative;
+  margin: 0 auto;
+}
+
+#img-caption{
+  text-align:center;
+}
+
+h2{
+  text-align:center;
+  color:grey;
+}
+
+#info{
+  text-align:justify;
+  color:LightSeaGreen;
+  font-size:20px;
+  padding-left:150px;
+  padding-right:150px;
+}
+
+ul{
+  color:LightSeaGreen;
+  padding:20px 150px 20px 150px;
+  font-size:20px;
+}
+
+footer{
+  color:LightSeaGreen;
+  text-align:center;
+}
